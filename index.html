@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClipPilot</title>
+<link rel="icon" type="image/png" href="icon.png">
+<meta name="description" content="ClipPilot turns the best moments of livestreams into vertical short videos and posts them to YouTube Shorts, Instagram Reels and TikTok.">
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f6368; --accent: #d6194a; --line: #e6e6e9; --card: #f6f6f8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111214; --fg: #ececf0; --muted: #a2a2ab; --accent: #ff5c7a; --line: #2a2b30; --card: #1b1c20; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header, main, footer { max-width: 720px; margin: 0 auto; padding-left: 16px; padding-right: 16px; }
+  header { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; justify-content: space-between;
+           padding-top: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .brand { font-weight: 700; font-size: 20px; color: var(--fg); text-decoration: none; }
+  nav { display: flex; flex-wrap: wrap; gap: 4px 18px; }
+  nav a { color: var(--muted); text-decoration: none; }
+  nav a[aria-current] { color: var(--fg); font-weight: 600; }
+  a { color: var(--accent); }
+  h1 { font-size: 30px; line-height: 1.2; margin: 32px 0 8px; }
+  h2 { font-size: 19px; margin: 30px 0 6px; }
+  .lead { font-size: 18px; color: var(--muted); margin-top: 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 4px 18px; }
+  footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); margin-top: 44px; padding-top: 16px; padding-bottom: 32px; }
+</style>
+</head>
+<body>
+<header>
+  <a class="brand" href="index.html">🎬 ClipPilot</a>
+  <nav><a href="index.html" aria-current="page">Home</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a></nav>
+</header>
+<main>
+  <h1>ClipPilot</h1>
+  <p class="lead">A personal app that turns the best moments of livestreams into vertical short videos and posts
+    them to YouTube Shorts, Instagram Reels and TikTok.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Finds the moments viewers reacted to most in a stream recording, using the chat, the audio and an AI judge.</li>
+    <li>Edits them into 9:16 clips with captions.</li>
+    <li>Lets its owner review every clip. Only approved clips are posted, at the times the owner picks.</li>
+    <li>Posts them to the owner's own YouTube channel, Instagram account and TikTok account through the platforms'
+      official APIs, and shows each post's views and likes.</li>
+  </ul>
+
+  <h2>Who uses it</h2>
+  <p>ClipPilot runs only on its owner's own computer. There is no ClipPilot server, no sign-up and nothing to buy.
+    It is only used for streams the owner made or has written permission to clip, and every caption credits the streamer.</p>
+
+  <div class="card">
+    <h2>YouTube</h2>
+    <p>ClipPilot uses YouTube API Services. When its owner connects a YouTube channel, ClipPilot asks Google for
+      permission to upload videos, and to see the channel's videos so it can show their views and likes. By using
+      ClipPilot's YouTube features you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.
+      The <a href="privacy.html">privacy policy</a> explains what happens with this data.</p>
+  </div>
+</main>
+<footer>
+  <a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of use</a> ·
+  Contact: <a href="mailto:yassinecherni9@gmail.com">yassinecherni9@gmail.com</a>
+</footer>
+</body>
+</html>
